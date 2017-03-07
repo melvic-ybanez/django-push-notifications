@@ -16,6 +16,9 @@ class GCMDeviceResource(ModelResource):
 		authorization = Authorization()
 		queryset = GCMDevice.objects.all()
 		resource_name = "device/gcm"
+		filtering = {
+			'name': ALL
+		}
 
 
 class APNSDeviceAuthenticatedResource(APNSDeviceResource):
