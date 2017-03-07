@@ -1,6 +1,6 @@
 from tastypie.authorization import Authorization
 from tastypie.authentication import BasicAuthentication
-from tastypie.resources import ModelResource
+from tastypie.resources import ModelResource, ALL
 from .models import APNSDevice, GCMDevice
 
 
